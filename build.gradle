@@ -27,3 +27,9 @@ dependencies {
     testRuntime 'org.jetbrains.spek:spek-junit-platform-engine:1.1.1'
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
 }
+
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
