@@ -23,9 +23,7 @@ fun fromHeights(vararg heights: Long): BigInteger {
         maxLeft
     }
 
-    fun Stream<BigInteger>.sum() : BigInteger {
-        return this.reduce(BigInteger.ZERO, BigInteger::add)
-    }
+    fun Stream<BigInteger>.sum() = this.reduce(BigInteger.ZERO, BigInteger::add)
 
     return runBlocking {
         val maxRight = maxRightFuture.await()
