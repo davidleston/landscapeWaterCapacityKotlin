@@ -2,7 +2,7 @@ group 'davidleston.com'
 version '1.0'
 
 buildscript {
-    ext.kotlin_version = '1.1.2-2'
+    ext.kotlin_version = '1.2.30'
 
     repositories {
         mavenCentral()
@@ -21,11 +21,11 @@ repositories {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
-    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.15'
-    testCompile 'org.jetbrains.spek:spek-api:1.1.1'
-    testRuntime 'org.jetbrains.spek:spek-junit-platform-engine:1.1.1'
-    testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.0-M4'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5'
+    testCompile 'org.jetbrains.spek:spek-api:1.1.5'
+    testRuntime 'org.jetbrains.spek:spek-junit-platform-engine:1.1.5'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.1.0'
 }
 
 kotlin {
